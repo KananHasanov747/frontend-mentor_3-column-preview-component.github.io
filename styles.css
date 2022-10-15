@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--very-light-gray);
 
     font-family: BigShouldersDisplay;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
 
     text-transform: uppercase;
@@ -70,7 +70,7 @@ button {
     border: none;
     padding: 10px 25px;
     border-radius: 30px;
-    margin-top: 90px;
+    margin-top: 70px;
 
     cursor: pointer;
 
@@ -115,14 +115,14 @@ body {
     }
     .preview {
         flex-direction: column;
-        margin-top: 300px;
+        margin-top: 290px;
     }
 
     .container {
-        height: 325px;
+        height: 340px;
     }
 
     button {
-        margin-top: 25px;
+        margin-top: 20px;
     }
 }
