@@ -1,0 +1,133 @@
+@font-face {
+    font-family: LexendDeca;
+    src: url("fonts/Lexend_Deca/static/LexendDeca-Regular.ttf");
+}
+
+@font-face {
+    font-family: BigShouldersDisplay;
+    src: url("fonts/Big_Shoulders_Display/static/BigShouldersDisplay-Regular.ttf");
+}
+
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179,100%, 13%);
+
+    /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.preview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container {
+    width: 220px;
+    height: 400px;
+    padding: 50px;
+}
+
+img {
+    width: 55px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--very-light-gray);
+
+    font-family: BigShouldersDisplay;
+    font-size: 3vw;
+    font-size: 40px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+p {
+    color: var(--transparent-white);
+
+    font-family: LexendDeca;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-top: 90px;
+
+    cursor: pointer;
+
+    background-color: var(--very-light-gray);
+}
+
+/* Colors */
+
+body {
+    background-color: var(--very-light-gray);
+}
+
+.sedan {
+    background-color: var(--bright-orange);
+}
+
+.sedan-button p {
+    color: var(--bright-orange);
+}
+
+.suv {
+    background-color: var(--dark-cyan);
+}
+
+.suv-button p {
+    color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+.luxury-button p {
+    color: var(--very-dark-cyan);
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 1000px) {
+    body {
+        height: 1400px;
+    }
+    .preview {
+        flex-direction: column;
+        margin-top: 300px;
+    }
+
+    .container {
+        height: 325px;
+    }
+
+    button {
+        margin-top: 25px;
+    }
+}
