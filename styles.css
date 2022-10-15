@@ -41,7 +41,7 @@
 .container {
     width: 220px;
     height: 400px;
-    padding: 50px;
+    padding: 45px;
 }
 
 img {
@@ -52,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--very-light-gray);
 
     font-family: BigShouldersDisplay;
-    font-size: 3vw;
     font-size: 40px;
     font-weight: 700;
 
@@ -74,7 +73,7 @@ p {
 button {
     border: none;
     padding: 10px 25px;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: 90px;
 
     cursor: pointer;
