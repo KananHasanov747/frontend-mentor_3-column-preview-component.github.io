@@ -41,11 +41,7 @@
 .container {
     width: 220px;
     height: 400px;
-    padding: 45px;
-}
-
-img {
-    width: 55px;
+    padding: 48px 45px;
 }
 
 h1, h2, h3, h4, h5, h6 {
